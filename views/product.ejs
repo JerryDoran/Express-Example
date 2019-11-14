@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <% include partials/nav.ejs %>
+    <h1>Welcome to the Products Page</h1>
+    <h3>
+      You have requested information for a product with the id of <%= id %>
+    </h3>
+    <p>Product Name: <%= data.name %></p>
+    <p>Product Description: <%= data.desc %></p>
+    <h3>Product Features</h3>
+    <ul>
+      <% data.features.forEach(feature => { %>
+      <li><%= feature %></li>
+      <% }); %>
+    </ul>
+  </body>
+</html>

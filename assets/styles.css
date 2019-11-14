@@ -1,0 +1,53 @@
+body {
+  background: skyblue;
+  font-family: sans-serif;
+  color: #fff;
+  padding: 30px;
+}
+h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+p,
+li {
+  font-size: 16px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 50px auto;
+}
+label {
+  margin: 10px 0;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  width: 25%;
+}
